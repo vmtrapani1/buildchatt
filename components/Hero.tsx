@@ -7,7 +7,7 @@ export default function Hero() {
         loop
         muted
         playsInline
-        src="/video/drone.mp4"
+        src="/bg-video.mp4"
       />
       <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center text-white px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">Premium Land in Chattanooga</h1>
