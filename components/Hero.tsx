@@ -13,8 +13,9 @@ export default function Hero() {
   Your browser does not support the video tag.
 </video>
       <div className="absolute inset-0 flex flex-col items-center justify-start text-center text-white px-4 pt-20">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">North Chattanooga Development</h1>
-        <p className="text-lg md:text-xl mb-6 max-w-xl">15 potential building sites, 1.6 continuous acres</p>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"> North Chattanooga Development </h1>
+        <p className="text-lg md:text-xl max-w-xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]">
+  15 potential building sites, 1.6 continuous acres, exceptional location</p>
         {/* <a href="#contact" className="bg-white text-black px-6 py-3 rounded-md font-semibold hover:bg-gray-200 transition">Get More Info</a> */}
       </div>
     </section>
