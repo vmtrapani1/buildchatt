@@ -29,5 +29,15 @@ export default function Hero() {
         </p>
       </motion.div>
     </section>
+
+    {/* Add more content below the hero section */}
+<section className="bg-white text-black px-6 py-20">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-2xl font-bold mb-4">Property Details</h2>
+    <p className="text-lg leading-relaxed">
+      This rare parcel offers up to 15 buildable lots on 1.6 continuous acres near the heart of Chattanooga. Zoned for residential development with utilities nearby and walkable access to key locations.
+    </p>
+  </div>
+</section>
   );
 }
