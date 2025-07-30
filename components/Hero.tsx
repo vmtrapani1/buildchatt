@@ -22,7 +22,7 @@ export default function Hero() {
   className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm text-white shadow-lg px-8 md:px-16 py-10 text-center rounded-b-lg w-full max-w-4xl flex flex-col justify-start items-center"
 >
   <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
-    NORTH CHATTANOOGA DEVELOPMENT
+    NORTH CHATTANOOGA DEVELOPMENT!
   </h1>
   <p className="text-lg md:text-xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">
     For Sale, 15 Potential Building Sites, Exceptional Location on Tremont St
