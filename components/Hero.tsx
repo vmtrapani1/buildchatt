@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export default function Hero() {
   return (
     <section className="relative w-full h-screen overflow-hidden">
@@ -13,14 +15,19 @@ export default function Hero() {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute top-24 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm rounded-xl px-6 py-6 text-center text-white shadow-lg max-w-3xl">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: 'easeOut' }}
+        className="absolute top-24 left-0 w-full bg-white/10 backdrop-blur-sm text-white shadow-lg px-8 md:px-16 py-10 text-center"
+      >
         <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
           North Chattanooga Development
         </h1>
         <p className="text-lg md:text-xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]">
           15 potential building sites, 1.6 continuous acres, exceptional location
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 }
