@@ -1,71 +1,9 @@
-import { motion } from 'framer-motion';
-
 export default function Hero() {
   return (
-    <section className="relative w-full h-screen overflow-hidden">
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-      >
-        <source src="/bg-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2, ease: 'easeOut' }}
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl bg-white/10 backdrop-blur-sm text-white shadow-lg rounded-b-lg px-8 md:px-16 pt-12 pb-8"
-      >
-        <div className="text-center mb-6">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-md">
-            NORTH CHATTANOOGA DEVELOPMENT
-          </h1>
-          <p className="text-lg md:text-xl drop-shadow">
-            For Sale, 15 Potential Building Sites, Exceptional Location on Tremont St
-          </p>
-        </div>
-
-        <div className="flex justify-end">
-          <div className="relative group">
-            <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
-              Properties
-              <svg
-                className="w-4 h-4 transition-transform group-hover:rotate-180"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <ul className="absolute right-0 mt-2 hidden group-hover:block bg-white text-black rounded shadow-lg min-w-[180px] z-50">
-              {[
-                "327 Tremont St",
-                "331 Tremont St",
-                "335 Tremont St",
-                "401 Tremont St",
-                "501 Tremont St",
-                "518 E Manning St",
-                "516 E Manning St",
-                "504 E Manning St"
-              ].map((address) => (
-                <li
-                  key={address}
-                  className="px-4 py-2 hover:bg-gray-100 cursor-pointer whitespace-nowrap"
-                >
-                  {address}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </motion.div>
+    <section className="relative w-full h-screen bg-red-500">
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-white text-black px-8 py-4 shadow-lg">
+        <h1 className="text-3xl font-bold">This should be centered</h1>
+      </div>
     </section>
   );
 }
