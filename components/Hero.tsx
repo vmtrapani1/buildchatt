@@ -19,7 +19,7 @@ export default function Hero() {
   initial={{ opacity: 0, y: 40 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1.2, ease: 'easeOut' }}
-  className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm text-white shadow-lg px-8 md:px-16 py-10 text-center rounded-b-lg w-full max-w-5xl"
+  className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm text-white shadow-lg px-8 md:px-16 py-10 text-center rounded-b-lg w-full max-w-4xl flex flex-col justify-start items-center"
 >
   <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]">
     NORTH CHATTANOOGA DEVELOPMENT
@@ -28,8 +28,8 @@ export default function Hero() {
     For Sale, 15 Potential Building Sites, Exceptional Location on Tremont St
   </p>
 
-  <div className="relative group mt-6 text-right">
-    <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition ml-auto">
+  <div className="self-end mt-6 relative group">
+    <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
       Properties
       <svg
         className="w-4 h-4 transition-transform group-hover:rotate-180"
@@ -63,6 +63,7 @@ export default function Hero() {
     </ul>
   </div>
 </motion.div>
+
 
     </section>
   );
