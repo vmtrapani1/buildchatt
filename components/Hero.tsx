@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section className="relative w-full h-screen overflow-hidden">
+      {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
@@ -15,20 +16,25 @@ export default function Hero() {
         Your browser does not support the video tag.
       </video>
 
+      {/* Glass Panel */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
-        className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-white/10 backdrop-blur-sm text-white shadow-lg w-full max-w-5xl px-8 md:px-16 pt-10 pb-6 rounded-b-lg flex flex-col items-center"
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl bg-white/10 backdrop-blur-sm text-white shadow-lg rounded-b-lg px-8 md:px-16 pt-12 pb-8"
       >
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)] text-center">
-          NORTH CHATTANOOGA DEVELOPMENT
-        </h1>
-        <p className="text-lg md:text-xl drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] text-center mb-6">
-          For Sale, 15 Potential Building Sites, Exceptional Location on Tremont St
-        </p>
+        {/* Hero Text */}
+        <div className="text-center mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-md">
+            NORTH CHATTANOOGA DEVELOPMENT
+          </h1>
+          <p className="text-lg md:text-xl drop-shadow">
+            For Sale, 15 Potential Building Sites, Exceptional Location on Tremont St
+          </p>
+        </div>
 
-        <div className="w-full flex justify-end">
+        {/* Dropdown */}
+        <div className="flex justify-end">
           <div className="relative group">
             <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
               Properties
@@ -42,7 +48,6 @@ export default function Hero() {
                 <path d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-
             <ul className="absolute right-0 mt-2 hidden group-hover:block bg-white text-black rounded shadow-lg min-w-[180px] z-50">
               {[
                 "327 Tremont St",
@@ -52,7 +57,7 @@ export default function Hero() {
                 "501 Tremont St",
                 "518 E Manning St",
                 "516 E Manning St",
-                "504 E Manning St",
+                "504 E Manning St"
               ].map((address) => (
                 <li
                   key={address}
