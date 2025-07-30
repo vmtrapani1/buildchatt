@@ -28,7 +28,6 @@ export default function Hero() {
           For Sale, 15 Potential Building Sites, Exceptional Location on Tremont St
         </p>
 
-        {/* Dropdown in bottom-right of this container */}
         <div className="w-full flex justify-end">
           <div className="relative group">
             <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
@@ -59,13 +58,3 @@ export default function Hero() {
                   key={address}
                   className="px-4 py-2 hover:bg-gray-100 cursor-pointer whitespace-nowrap"
                 >
-                  {address}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </motion.div>
-    </section>
-  );
-}
