@@ -13,8 +13,6 @@ export default function Header() {
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 h-16' : 'bg-transparent h-16'}`}>
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-full">
         
-  <div className="text-white font-bold text-xl">BuildChatt</div>
-        
   <div className="text-white hidden sm:flex items-center space-x-6">
     <button className="flex items-center gap-1 font-medium hover:text-gray-300 transition">
       Properties
