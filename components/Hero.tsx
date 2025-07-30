@@ -58,3 +58,13 @@ export default function Hero() {
                   key={address}
                   className="px-4 py-2 hover:bg-gray-100 cursor-pointer whitespace-nowrap"
                 >
+                  {address}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </motion.div>
+    </section>
+  );
+}
