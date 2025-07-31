@@ -73,15 +73,41 @@ export default function Hero() {
 
       {/* ✅ White section BELOW video */}
       <section className="bg-white text-black px-6 md:px-12 py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-            Property Details
-          </h2>
-          <p className="text-lg leading-relaxed">
-            Now Available for Sale: Prime 1.6-Acre Land Package in North Chattanooga, TN 37405. An exceptional opportunity to acquire a contiguous land package comprised of seven individually deeded properties with 11 lots of record—offering the potential for up to 14 building lots with straightforward zoning adjustments. Additionally, this offering includes one standalone buildable lot. Located near Coolidge Park and the vibrant Frazier Avenue business district, this property presents significant development potential in a highly sought-after area of Chattanooga.
-          </p>
-        </div>
-      </section>
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-3xl font-bold mb-6 text-center">Property Details</h2>
+    
+    <p className="text-lg leading-relaxed mb-6">
+      <strong>Now Available for Sale:</strong> Prime 1.6-Acre Land Package in Chattanooga, TN 37405. An exceptional opportunity to acquire a contiguous land package comprised of seven individually deeded properties with 11 lots of record—offering the potential for up to 14 building lots with straightforward zoning adjustments. Additionally, this offering includes one standalone buildable lot. Located near Coolidge Park and the vibrant Frazier Avenue business district, this property presents significant development potential in a sought-after area.
+    </p>
+
+    <h3 className="text-xl font-semibold mb-2">The offering includes the following properties:</h3>
+    <ul className="list-disc pl-6 mb-6 space-y-1">
+      <li>327 Tremont St</li>
+      <li>331 Tremont St</li>
+      <li>335 Tremont St</li>
+      <li>401 Tremont St</li>
+      <li>501 Tremont St</li>
+      <li>504 E Manning St</li>
+      <li>516 E Manning St</li>
+      <li>518 E Manning St</li>
+    </ul>
+
+    <div className="mb-8 text-center italic">(Insert Map here)</div>
+
+    <h3 className="text-xl font-semibold mb-2">Development Possibilities</h3>
+    <p className="text-lg leading-relaxed mb-4">
+      This land package offers a builder flexibility in potential development options:
+    </p>
+    <ul className="list-disc pl-6 space-y-1">
+      <li>Single Family – 14 Potential Building Sites</li>
+      <li>Duplex – 6 Duplexes (12 Potential Units) with 8 Single Family</li>
+      <li>Quad – 6 Quadplexes (24 Potential Units) with 8 Single Family</li>
+      <li>Townhome – 30 Townhomes with 8 Single Family</li>
+      <li>Multi-Family – 37 Apartments with 8 Single Family</li>
+    </ul>
+  </div>
+</section>
+
     </>
   );
 }
