@@ -25,7 +25,7 @@ export default function Hero() {
       >
         <div className="relative flex items-center justify-center w-full min-h-[64px]">
           {/* Centered Headline */}
-          <h1 className="text-2xl md:text-4xl font-bold tracking-wide drop-shadow text-center w-full">
+          <h1 className="text-5xl md:text-4xl font-bold tracking-wide drop-shadow text-center w-full">
             North Chattanooga Development
           </h1>
 
