@@ -49,14 +49,14 @@ export default function Hero() {
 
               <ul className="absolute right-0 mt-4 hidden group-hover:block bg-white/10 backdrop-blur-lg text-white rounded shadow-xl min-w-[200px] z-50 py-2">
                 {[
-                  "327 Tremont St",
-                  "331 Tremont St",
-                  "335 Tremont St",
-                  "401 Tremont St",
-                  "501 Tremont St",
-                  "504 E Manning St",
-                  "516 E Manning St",
-                  "518 E Manning St",
+                  "327 Placeholder St",
+                  "331 Placeholder St",
+                  "335 Placeholder St",
+                  "401 Placeholder St",
+                  "501 Placeholder St",
+                  "504 Placeholder St",
+                  "516 Placeholder",
+                  "518 Placeholder",
                 ].map((address) => (
                   <li
                     key={address}
@@ -82,14 +82,14 @@ export default function Hero() {
 
           <h3 className="text-xl font-semibold mb-2">The offering includes the following properties:</h3>
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-2 mb-10 list-disc pl-5">
-            <li>327 Tremont St</li>
-            <li>331 Tremont St</li>
-            <li>335 Tremont St</li>
-            <li>401 Tremont St</li>
-            <li>501 Tremont St</li>
-            <li>504 E Manning St</li>
-            <li>516 E Manning St</li>
-            <li>518 E Manning St</li>
+            <li>327 Placeholder St</li>
+            <li>331 Placeholder St</li>
+            <li>335 Placeholder St</li>
+            <li>401 Placeholder St</li>
+            <li>501 Placeholder St</li>
+            <li>504 Placeholder St</li>
+            <li>516 Placeholder St</li>
+            <li>518 Placeholder St</li>
           </ul>
 
           <div className="mb-12 px-2 sm:px-4 md:px-0">
