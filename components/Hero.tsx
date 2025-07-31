@@ -22,7 +22,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
-          className="sticky top-0 z-50 w-full bg-white/10 backdrop-blur-md text-white px-6 md:px-12 py-4 shadow-md"
+          className="sticky top-0 z-50 w-full overflow-visible bg-white/10 backdrop-blur-md text-white px-6 md:px-12 py-4 shadow-md"
         >
           <div className="relative flex flex-col md:flex-row items-center w-full min-h-[64px] px-4">
             {/* Headline */}
@@ -47,7 +47,7 @@ export default function Hero() {
                 </svg>
               </button>
 
-              <ul className="absolute right-0 top-full mt-6 hidden group-hover:block bg-white/10 backdrop-blur-lg text-white rounded-lg shadow-xl min-w-[200px] z-50 py-2">
+              <ul className="absolute right-0 top-full mt-10 hidden group-hover:block bg-white/10 dark:bg-black/20 backdrop-blur-md text-white rounded-lg shadow-xl min-w-[200px] z-50 py-2 border border-white/20">
   {[
     "327 Tremont St",
     "331 Tremont St",
