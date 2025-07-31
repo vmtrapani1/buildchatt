@@ -92,7 +92,13 @@ export default function Hero() {
       <li>518 E Manning St</li>
     </ul>
 
-    <div className="mb-8 text-center italic">(Insert Map here)</div>
+    <div className="mb-10 text-center">
+  <img
+    src="/map.png"
+    alt="Map of Property Locations"
+    className="mx-auto max-w-full h-auto rounded shadow-md"
+  />
+</div>
 
     <h3 className="text-xl font-semibold mb-2">Development Possibilities</h3>
     <p className="text-lg leading-relaxed mb-4">
