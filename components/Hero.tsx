@@ -26,12 +26,12 @@ export default function Hero() {
         >
           <div className="relative flex items-center justify-center w-full min-h-[64px]">
             {/* Centered Headline */}
-            <h1 className="text-5xl md:text-4xl font-bold tracking-wide drop-shadow text-center w-full">
-              North Chattanooga Development
-            </h1>
+            <h1 className="text-2xl md:text-6xl font-bold tracking-wide drop-shadow text-center w-full">
+  North Chattanooga Development
+</h1>
 
             {/* Right-aligned Dropdown */}
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 pr-2">
+            <div className="relative flex flex-col md:flex-row items-center justify-center md:justify-between w-full min-h-[64px] gap-2 md:gap-0">
               <div className="relative group">
                 <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
                   Properties
@@ -46,7 +46,7 @@ export default function Hero() {
                   </svg>
                 </button>
 
-                <ul className="absolute right-0 mt-2 hidden group-hover:block bg-white text-black rounded shadow-lg min-w-[180px] z-50">
+                <ul className="absolute right-0 mt-2 hidden group-hover:block bg-white/10 backdrop-blur-md text-white rounded shadow-lg min-w-[180px] z-50">
                   {[
                     "327 Tremont St",
                     "331 Tremont St",
