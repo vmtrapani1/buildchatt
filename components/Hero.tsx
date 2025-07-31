@@ -33,7 +33,7 @@ export default function Hero() {
             </div>
 
             {/* Dropdown */}
-            <div className="relative group mt-2 md:mt-0 md:absolute md:right-4 md:top-1/2 md:-translate-y-1/2">
+            <div className="relative group mt-4 md:mt-0 md:absolute md:right-4 md:top-1/2 md:-translate-y-1/2">
               <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
                 Properties
                 <svg
