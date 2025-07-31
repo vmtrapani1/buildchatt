@@ -47,7 +47,7 @@ export default function Hero() {
                 </svg>
               </button>
 
-              <ul className="absolute top-full right-0 mt-3 hidden group-hover:block bg-white/10 backdrop-blur-md text-white border border-white/20 rounded shadow-lg min-w-[180px] z-50">
+              <ul className="absolute right-0 mt-4 hidden group-hover:block bg-white/10 backdrop-blur-lg text-white rounded shadow-xl min-w-[200px] z-50 py-2">
                 {[
                   "327 Tremont St",
                   "331 Tremont St",
