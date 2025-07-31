@@ -81,24 +81,25 @@ export default function Hero() {
     </p>
 
     <h3 className="text-xl font-semibold mb-2">The offering includes the following properties:</h3>
-    <ul className="list-disc pl-6 mb-6 space-y-1">
-      <li>327 Tremont St</li>
-      <li>331 Tremont St</li>
-      <li>335 Tremont St</li>
-      <li>401 Tremont St</li>
-      <li>501 Tremont St</li>
-      <li>504 E Manning St</li>
-      <li>516 E Manning St</li>
-      <li>518 E Manning St</li>
-    </ul>
+<ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-2 mb-10 list-disc pl-5">
+  <li>327 Tremont St</li>
+  <li>331 Tremont St</li>
+  <li>335 Tremont St</li>
+  <li>401 Tremont St</li>
+  <li>501 Tremont St</li>
+  <li>504 E Manning St</li>
+  <li>516 E Manning St</li>
+  <li>518 E Manning St</li>
+</ul>
 
-    <div className="mb-10 text-center">
+<div className="mb-12 px-2 sm:px-4 md:px-0">
   <img
     src="/map.png"
     alt="Map of Property Locations"
-    className="mx-auto max-w-full h-auto rounded shadow-md"
+    className="w-full max-w-5xl mx-auto h-auto rounded shadow-md"
   />
 </div>
+
 
     <h3 className="text-xl font-semibold mb-2">Development Possibilities</h3>
     <p className="text-lg leading-relaxed mb-4">
