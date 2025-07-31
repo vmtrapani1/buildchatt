@@ -33,42 +33,44 @@ export default function Hero() {
             </div>
 
             {/* Dropdown */}
-            <div className="relative group mt-0 md:mt-0 md:absolute md:right-4 md:top-1/2 md:-translate-y-1/2">
-              <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
-                Properties
-                <svg
-                  className="w-4 h-4 transition-transform group-hover:rotate-180"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-
-              <ul className="absolute right-0 top-full mt-10 hidden group-hover:block bg-white/10 dark:bg-black/20 backdrop-blur-md text-white rounded-lg shadow-xl min-w-[200px] z-50 py-2 border border-white/20">
-  {[
-    "327 Tremont St",
-    "331 Tremont St",
-    "335 Tremont St",
-    "401 Tremont St",
-    "501 Tremont St",
-    "504 E Manning St",
-    "516 E Manning St",
-    "518 E Manning St",
-  ].map((address) => (
-    <li
-      key={address}
-      className="px-4 py-2 hover:bg-white/20 cursor-pointer whitespace-nowrap"
+<div className="relative group mt-0 md:mt-0 md:absolute md:right-4 md:top-1/2 md:-translate-y-1/2 z-50">
+  <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
+    Properties
+    <svg
+      className="w-4 h-4 transition-transform group-hover:rotate-180"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
     >
-      {address}
-    </li>
-  ))}
-</ul>
+      <path d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
 
-            </div>
-          </div>
+  {/* Move this UL to avoid blur stack rendering */}
+  <div className="absolute right-0 mt-3 z-[100]">
+    <ul className="bg-white/10 backdrop-blur-md text-white rounded-lg shadow-xl min-w-[200px] border border-white/20 py-2">
+      {[
+        "327 Tremont St",
+        "331 Tremont St",
+        "335 Tremont St",
+        "401 Tremont St",
+        "501 Tremont St",
+        "504 E Manning St",
+        "516 E Manning St",
+        "518 E Manning St",
+      ].map((address) => (
+        <li
+          key={address}
+          className="px-4 py-2 hover:bg-white/20 cursor-pointer whitespace-nowrap"
+        >
+          {address}
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
         </motion.div>
       </section>
 
