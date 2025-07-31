@@ -78,7 +78,7 @@ export default function Hero() {
             Property Details
           </h2>
           <p className="text-lg leading-relaxed">
-            Now Available for Sale: Prime 1.6-Acre Land Package Near Coolidge Park. An exceptional opportunity to acquire a 1.6-acre contiguous land package comprised of seven individually deeded properties with 11 lots of record—offering the potential for up to 14 building lots with straightforward zoning adjustments. Additionally, this offering includes one standalone buildable lot. Located near Coolidge Park and the vibrant Frazier Avenue business district, this property presents significant development potential in a sought-after area.
+            Now Available for Sale: Prime 1.6-Acre Land Package in North Chattanooga, TN 37405. An exceptional opportunity to acquire a contiguous land package comprised of seven individually deeded properties with 11 lots of record—offering the potential for up to 14 building lots with straightforward zoning adjustments. Additionally, this offering includes one standalone buildable lot. Located near Coolidge Park and the vibrant Frazier Avenue business district, this property presents significant development potential in a highly sought-after area of Chattanooga.
           </p>
         </div>
       </section>
