@@ -78,7 +78,7 @@ export default function Hero() {
             Property Details
           </h2>
           <p className="text-lg leading-relaxed">
-            This rare parcel offers up to 15 buildable lots on 1.6 continuous acres near the heart of Chattanooga. Zoned for residential development with utilities nearby and walkable access to key locations.
+            Now Available for Sale: Prime 1.6-Acre Land Package Near Coolidge Park. An exceptional opportunity to acquire a 1.6-acre contiguous land package comprised of seven individually deeded properties with 11 lots of record—offering the potential for up to 14 building lots with straightforward zoning adjustments. Additionally, this offering includes one standalone buildable lot. Located near Coolidge Park and the vibrant Frazier Avenue business district, this property presents significant development potential in a sought-after area.
           </p>
         </div>
       </section>
