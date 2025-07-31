@@ -47,25 +47,26 @@ export default function Hero() {
                 </svg>
               </button>
 
-              <ul className="absolute right-0 mt-4 hidden group-hover:block bg-white/10 backdrop-blur-lg text-white rounded shadow-xl min-w-[200px] z-50 py-2">
-                {[
-                  "327 Tremont St",
-                  "331 Tremont St",
-                  "335 Tremont St",
-                  "401 Tremont St",
-                  "501 Tremont St",
-                  "504 E Manning St",
-                  "516 E Manning St",
-                  "518 E Manning St",
-                ].map((address) => (
-                  <li
-                    key={address}
-                    className="px-4 py-2 hover:bg-white/20 cursor-pointer whitespace-nowrap"
-                  >
-                    {address}
-                  </li>
-                ))}
-              </ul>
+              <ul className="absolute right-0 top-full mt-6 hidden group-hover:block bg-white/10 backdrop-blur-lg text-white rounded-lg shadow-xl min-w-[200px] z-50 py-2">
+  {[
+    "327 Tremont St",
+    "331 Tremont St",
+    "335 Tremont St",
+    "401 Tremont St",
+    "501 Tremont St",
+    "504 E Manning St",
+    "516 E Manning St",
+    "518 E Manning St",
+  ].map((address) => (
+    <li
+      key={address}
+      className="px-4 py-2 hover:bg-white/20 cursor-pointer whitespace-nowrap"
+    >
+      {address}
+    </li>
+  ))}
+</ul>
+
             </div>
           </div>
         </motion.div>
