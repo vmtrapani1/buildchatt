@@ -25,9 +25,10 @@ export default function Hero() {
       >
         <div className="relative flex items-center justify-center w-full min-h-[64px]">
           {/* Centered Headline */}
-          <h1 className="text-lg md:text-2xl font-bold tracking-wide drop-shadow text-center w-full">
+          <h1 className="text-2xl md:text-4xl font-bold tracking-wide drop-shadow text-center w-full">
             North Chattanooga Development
           </h1>
+
 
           {/* Right-aligned Dropdown */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 pr-2">
