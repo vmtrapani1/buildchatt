@@ -31,42 +31,51 @@ export default function Hero() {
 </h1>
 
             {/* Right-aligned Dropdown */}
-            <div className="relative flex flex-col md:flex-row items-center justify-center md:justify-between w-full min-h-[64px] gap-2 md:gap-0">
-              <div className="relative group">
-                <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
-                  Properties
-                  <svg
-                    className="w-4 h-4 transition-transform group-hover:rotate-180"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
+            <div className="relative flex flex-col md:flex-row items-center w-full min-h-[64px] px-4">
+  {/* Headline */}
+  <div className="flex-1 text-center">
+    <h1 className="text-2xl md:text-6xl font-bold tracking-wide drop-shadow text-white">
+      North Chattanooga Development
+    </h1>
+  </div>
 
-                <ul className="absolute right-0 mt-2 hidden group-hover:block bg-white/10 backdrop-blur-md text-white rounded shadow-lg min-w-[180px] z-50">
-                  {[
-                    "327 Tremont St",
-                    "331 Tremont St",
-                    "335 Tremont St",
-                    "401 Tremont St",
-                    "501 Tremont St",
-                    "518 E Manning St",
-                    "516 E Manning St",
-                    "504 E Manning St"
-                  ].map((address) => (
-                    <li
-                      key={address}
-                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer whitespace-nowrap"
-                    >
-                      {address}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+  {/* Dropdown */}
+  <div className="relative group mt-2 md:mt-0 md:absolute md:right-4 md:top-1/2 md:-translate-y-1/2">
+    <button className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition">
+      Properties
+      <svg
+        className="w-4 h-4 transition-transform group-hover:rotate-180"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
+        <path d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+
+    <ul className="absolute right-0 mt-2 hidden group-hover:block bg-white/10 backdrop-blur-md text-white rounded shadow-lg min-w-[180px] z-50">
+      {[
+        "327 Tremont St",
+        "331 Tremont St",
+        "335 Tremont St",
+        "401 Tremont St",
+        "501 Tremont St",
+        "504 E Manning St",
+        "516 E Manning St",
+        "518 E Manning St",
+      ].map((address) => (
+        <li
+          key={address}
+          className="px-4 py-2 hover:bg-white/20 cursor-pointer whitespace-nowrap"
+        >
+          {address}
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
           </div>
         </motion.div>
       </section>
